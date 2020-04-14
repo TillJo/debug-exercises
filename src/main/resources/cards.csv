@@ -1,0 +1,8 @@
+Question,Answer,Difficult,Topic,Info1,Info2,Info3,Info4
+What is Java?,Programming language,EASY,Informatics,,,,
+Sqrt(4),2,NORMAL,Math,2*2 = 4,https://web2.0rechner.de/,,
+What is the largest city in the world?,Shanghai,,,,,,
+What is the largest country in the world?,Russia,EASY,Geography,https://en.wikipedia.org/wiki/Russia,,,
+What is the largest country in the world?,Russia,EASY,Geography,,,,
+Which color is green?,,,,Doesn‘t make sense.,,,
+What is the best university in the world?,Bielefeld,HARD,Geography,https://de.wikipedia.org/wiki/Bielefeld,https://www.uni-bielefeld.de/,https://www.uni-bielefeld.de/,https://de.wikipedia.org/wiki/Bielefeld-Verschw%C3%B6rung
