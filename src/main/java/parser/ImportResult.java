@@ -20,7 +20,7 @@ public class ImportResult<T> {
     }
 
     public List<T> getDuplicates() {
-        return duplicates;
+        return successful;
     }
 
     public List<T> getNotReadable() {

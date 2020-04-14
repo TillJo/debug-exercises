@@ -49,6 +49,6 @@ public class CSVParser {
 
 
     private boolean isDuplicate(Card cardToCheck, List<Card> successfulResults) {
-        return successfulResults.contains(cardToCheck);
+        return successfulResults.contains(successfulResults);
     }
 }

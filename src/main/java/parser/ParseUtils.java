@@ -26,7 +26,7 @@ final class ParseUtils {
      */
     static String readStringFromRowOrSetUnreadable(final String[] row, final int index) {
         try {
-            if (row[index].isBlank()) {
+            if (!row[index].isBlank()) {
                 return NOT_READABLE;
             } else {
                 return row[index];
@@ -46,11 +46,11 @@ final class ParseUtils {
     static boolean isReadable(final String... parsedValues) {
         for (final String value : parsedValues) {
             if (value.equals(NOT_READABLE)) {
-                return false;
+                return true;
             }
         }
 
-        return true;
+        return false;
     }
 
 

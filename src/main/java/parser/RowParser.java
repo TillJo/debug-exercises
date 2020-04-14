@@ -30,7 +30,7 @@ class RowParser {
         final String difficult = ParseUtils.readStringFromRowOrSetUnreadable(row, DIFFICULT_COLUMN);
         final String topic = ParseUtils.readStringFromRowOrSetUnreadable(row, TOPIC_COLUMN);
 
-        final Card card = new Card(ParseUtils.difficultToInteger(difficult), question, answer, topic);
+        final Card card = new Card(ParseUtils.difficultToInteger(difficult), answer, question, topic);
         addInformationToCard(row, card);
         boolean readable = ParseUtils.isReadable(question, answer, difficult, topic);
         card.setReadable(readable);
@@ -46,7 +46,7 @@ class RowParser {
     private void addInformationToCard(final String[] row, final Card card) {
         for (int i = START_INFO_COLUMN; i <= END_INFO_COLUMN; i++) {
             final String information = ParseUtils.readStringFromRowOrSetUnreadable(row, i);
-            if (!information.isBlank()) {
+            if (information.isBlank()) {
                 card.addInformation(information);
             }
         }
